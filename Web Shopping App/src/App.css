@@ -1,0 +1,431 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "DM Sans", sans-serif;
+  background: #f5efe6;
+  color: #241a14;
+}
+
+button {
+  font-family: inherit;
+}
+
+.app {
+  min-height: 100vh;
+}
+
+header {
+  height: 80px;
+  padding: 0 7%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #211711;
+  color: white;
+  border-bottom: 1px solid #453229;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo {
+  width: 43px;
+  height: 43px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #c88c52;
+  border-radius: 50%;
+  font-size: 21px;
+}
+
+.brand h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 22px;
+  letter-spacing: 2px;
+}
+
+.brand p {
+  color: #bba99d;
+  font-size: 8px;
+  letter-spacing: 3px;
+}
+
+.order-count {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  padding: 9px 15px;
+  background: #35251d;
+  border: 1px solid #4b362c;
+  border-radius: 30px;
+  font-weight: 600;
+}
+
+main {
+  width: 88%;
+  max-width: 1250px;
+  margin: auto;
+}
+
+.hero {
+  padding: 65px 0 55px;
+  border-bottom: 1px solid #d8ccbe;
+}
+
+.tag {
+  display: inline-block;
+  margin-bottom: 15px;
+  color: #9b6236;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 3px;
+}
+
+.hero h2 {
+  max-width: 700px;
+  font-family: "Playfair Display", serif;
+  font-size: clamp(45px, 6vw, 72px);
+  line-height: 0.98;
+}
+
+.hero h2 span {
+  color: #a66b3f;
+  font-style: italic;
+}
+
+.hero > p {
+  max-width: 500px;
+  margin-top: 22px;
+  color: #75665c;
+  line-height: 1.7;
+}
+
+.shop {
+  display: grid;
+  grid-template-columns: 1fr 360px;
+  gap: 50px;
+  padding: 50px 0 70px;
+}
+
+.section-title,
+.order-header {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+
+.section-title p,
+.order-header p {
+  margin-bottom: 4px;
+  color: #a66b3f;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.section-title h2,
+.order-header h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 28px;
+}
+
+.section-title > span,
+.order-header > span {
+  color: #8d7c70;
+  font-size: 12px;
+}
+
+.coffee-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 17px;
+}
+
+.coffee-card {
+  position: relative;
+  overflow: hidden;
+  min-height: 200px;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: #fffaf3;
+  border: 1px solid #ded2c4;
+  border-radius: 18px;
+  transition: 0.3s;
+}
+
+.coffee-card:hover {
+  transform: translateY(-5px);
+  border-color: #b98760;
+  box-shadow: 0 15px 35px rgba(67, 45, 31, 0.1);
+}
+
+.coffee-icon {
+  width: 55px;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #efe2d3;
+  border-radius: 14px;
+  font-size: 27px;
+}
+
+.coffee-info h3 {
+  margin-top: 20px;
+  font-family: "Playfair Display", serif;
+  font-size: 21px;
+}
+
+.coffee-info > p {
+  margin-top: 5px;
+  color: #89776a;
+  font-size: 13px;
+}
+
+.coffee-bottom {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.coffee-bottom strong {
+  color: #7a4829;
+  font-size: 17px;
+}
+
+.coffee-bottom button {
+  width: 38px;
+  height: 38px;
+  border: none;
+  border-radius: 50%;
+  background: #2a1d16;
+  color: white;
+  font-size: 22px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.coffee-bottom button:hover {
+  background: #a66b3f;
+  transform: rotate(90deg);
+}
+
+.order-section {
+  height: fit-content;
+  position: sticky;
+  top: 25px;
+  padding: 27px;
+  background: #211711;
+  color: white;
+  border-radius: 20px;
+  box-shadow: 0 20px 45px rgba(46, 30, 21, 0.18);
+}
+
+.order-header {
+  padding-bottom: 20px;
+  border-bottom: 1px solid #46342a;
+}
+
+.order-header h2 {
+  color: white;
+}
+
+.order-header > span {
+  color: #a9988c;
+}
+
+.order-list {
+  max-height: 310px;
+  overflow-y: auto;
+}
+
+.order-item {
+  padding: 14px 0;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  border-bottom: 1px solid #3e2d24;
+}
+
+.mini-icon {
+  width: 42px;
+  height: 42px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #35251d;
+  border-radius: 10px;
+}
+
+.item-info {
+  flex: 1;
+}
+
+.item-info h4 {
+  font-size: 14px;
+}
+
+.item-info p {
+  margin-top: 3px;
+  color: #c49369;
+  font-size: 12px;
+}
+
+.remove {
+  border: none;
+  background: none;
+  color: #87776d;
+  font-size: 21px;
+  cursor: pointer;
+}
+
+.remove:hover {
+  color: #ff8e8e;
+}
+
+.summary {
+  margin-top: 20px;
+  padding-top: 17px;
+  border-top: 1px solid #46342a;
+}
+
+.summary > div {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  color: #a9988c;
+  font-size: 13px;
+}
+
+.summary .total {
+  margin-top: 15px;
+  color: white;
+  font-size: 18px;
+}
+
+.total strong {
+  color: #e2a976;
+  font-size: 22px;
+}
+
+.checkout,
+.clear {
+  width: 100%;
+  padding: 13px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.checkout {
+  margin-top: 15px;
+  background: #c18452;
+  color: #211711;
+  font-weight: 700;
+  transition: 0.2s;
+}
+
+.checkout:hover {
+  background: #daa16f;
+  transform: translateY(-2px);
+}
+
+.clear {
+  margin-top: 8px;
+  background: transparent;
+  color: #95847a;
+}
+
+.clear:hover {
+  color: white;
+}
+
+.empty {
+  padding: 45px 10px;
+  text-align: center;
+}
+
+.empty > div {
+  margin-bottom: 15px;
+  font-size: 42px;
+  filter: grayscale(1);
+  opacity: 0.5;
+}
+
+.empty h3 {
+  font-family: "Playfair Display", serif;
+  font-size: 19px;
+}
+
+.empty p {
+  margin-top: 7px;
+  color: #8f8076;
+  font-size: 12px;
+}
+
+footer {
+  padding: 25px 7%;
+  display: flex;
+  justify-content: space-between;
+  background: #211711;
+  color: #a9988c;
+  font-size: 12px;
+}
+
+footer p {
+  color: white;
+  font-weight: 600;
+}
+
+@media (max-width: 850px) {
+  .shop {
+    grid-template-columns: 1fr;
+  }
+
+  .order-section {
+    position: static;
+  }
+}
+
+@media (max-width: 550px) {
+  header {
+    padding: 0 5%;
+  }
+
+  main {
+    width: 90%;
+  }
+
+  .hero {
+    padding: 45px 0;
+  }
+
+  .coffee-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .shop {
+    gap: 30px;
+  }
+
+  footer {
+    flex-direction: column;
+    gap: 8px;
+    text-align: center;
+  }
+}
