@@ -4,9 +4,9 @@ A collection of beginner-to-intermediate JavaScript projects and applications de
 
 ## About
 
-This repository contains a variety of JavaScript mini projects ranging from basic programming exercises to dynamic web applications. Each project focuses on a specific concept such as event handling, arrays, objects, local storage, API integration, and interactive user interfaces.
+- This repository contains a variety of JavaScript mini projects ranging from basic programming exercises to dynamic web applications. Each project focuses on a specific concept such as event handling, arrays, objects, local storage, API integration, and interactive user interfaces.
 
-Whether you're a beginner learning JavaScript or a developer looking for practical examples, these projects provide an excellent way to improve your front-end development skills.
+- Whether you're a beginner learning JavaScript or a developer looking for practical examples, these projects provide an excellent way to improve your front-end development skills.
 
 ---
 
@@ -66,7 +66,9 @@ This repository aims to help beginners and me to -
 
 **Vinaal R**
 
-GitHub: [Dark-Vinaal](https://github.com/Dark-Vinaal/)
+[![Portfolio](https://img.shields.io/badge/Portfolio-00F5FF?style=for-the-badge&logo=react&logoColor=black)](https://vinaalr.netlify.app)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://vinaalr.linkedin.com)
+[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Dark-Vinaal)  
 
 ---
 

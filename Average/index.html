@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Average Calculator</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            background: #eee;
+            padding: 40px;
+        }
+
+        .container {
+            max-width: 500px;
+            margin: auto;
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+        }
+
+        input {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            box-sizing: border-box;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            cursor: pointer;
+        }
+
+        #result {
+            margin-top: 20px;
+            font-size: 18px;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>Average Calculator</h1>
+
+    <input
+        id="numbers"
+        placeholder="Example: 10, 20, 30, 40"
+    >
+
+    <button onclick="calculateAverage()">
+        Calculate
+    </button>
+
+    <div id="result"></div>
+
+</div>
+
+<script>
+
+function calculateAverage() {
+
+    const input = document.getElementById("numbers").value;
+
+    const numbers = input
+        .split(",")
+        .map(Number)
+        .filter(num => !isNaN(num));
+
+    if (numbers.length === 0) {
+        document.getElementById("result").innerText =
+            "Enter some numbers.";
+        return;
+    }
+
+    const sum = numbers.reduce(
+        (total, number) => total + number,
+        0
+    );
+
+    const average = sum / numbers.length;
+
+    document.getElementById("result").innerHTML =
+        `Count: <b>${numbers.length}</b><br>
+         Sum: <b>${sum}</b><br>
+         Average: <b>${average.toFixed(2)}</b>`;
+}
+
+</script>
+
+</body>
+</html>
