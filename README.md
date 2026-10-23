@@ -15,7 +15,11 @@ A collection of beginner-to-intermediate JavaScript projects and applications de
 | Project                | Description                                      | Stack                |
 | ---------------------- | ------------------------------------------------ |----------------------|
 | Bio Data Web App       | A functional Bio Data Register Form              | `Express.js`         |
-| BMI Calculator         | A fully functional Web UI for a Coffee Shop App  | `React.js` `Vite.js` |
+| BMI Calculator         | A fully functional BMI Calculator  | `JavaScript`, `HTML`, `CSS` |
+| Age Finder             | A fully functional Age Finder      | `JavaScript`, `HTML`, `CSS` |
+| Average Calculator     | A fully functional Avg Calculator  | `JavaScript`, `HTML`, `CSS` |
+| ToDo List              | A fully functional ToDo List Keeper | `JavaScript`, `HTML`, `CSS` |
+| Unit Converter         | A fully functional Unit Converter  | `JavaScript`, `HTML`, `CSS` |
 
 ---
 
@@ -33,6 +37,14 @@ A collection of beginner-to-intermediate JavaScript projects and applications de
 * Logic Building & State Tracking
 * Responsive UI Interaction
 
+### Stacks 
+
+- JavaScript Libraries
+  - React.js, JQuery
+- JavaScript Frameworks
+  - Angular.js, Vue.js, Express.js, Next.js, Nest.js, Nuxt.js
+- TypeScript
+
 ---
 
 ## Repository Structure
@@ -40,8 +52,9 @@ A collection of beginner-to-intermediate JavaScript projects and applications de
 ```text
 JS_Mini_Projects/
 │
-├── Projects Folder/
-├────── HTML, CSS & JS Files 
+├── Lib|FW/
+├────── Project Folder/ 
+├──────────── HTML, CSS & JS Files 
 │
 ├── .gitignore
 │
